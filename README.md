@@ -42,5 +42,11 @@ release : 배포 나갈 시 생성하는 브랜치 / develop 브랜치를 기준
 master : Stable한 코드의 저장소, master 브랜치로 배포 시 언제든 stable 한 상태의 코드가 배포되게 한다.
 
 각각의 이슈에 대한 개발 사항은 feature/이슈번호로 설정한다.
+feature/이슈번호에서 개발한 각각의 기능은 게시판의 종류에 따라 feature/게시판종류/날짜 브랜치로 통합한다.
 
+feature/게시판종류/날짜 브랜치에서 develop 브랜치로 통합한다.
+
+develop 브랜치에서 테스트를 해보고 괜찮으면 release -> master 순서로 배포한다.
+
+배포 과정을 익히는 동안은 feature -> feature/도메인 -> develop으로 가는 일련의 과정만 수행한다.
 ```
